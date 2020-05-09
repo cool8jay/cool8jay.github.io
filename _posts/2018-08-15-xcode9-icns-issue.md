@@ -3,7 +3,7 @@ title:  "Xcode 9: issue of generating icns file"
 date:   2018-08-15 10:57:07 +0800
 ---
 
-During developing of my new app [Pica](http://pica.strikingly.com/){:target="_blank"}, I find some apps' icns files do not contains all format as I presume, even those apps update in recent days.
+During developing of my new app [iconbook](http://iconbook.strikingly.com/){:target="_blank"}, I find some apps' icns files do not contains all format as I presume, even those apps update in recent days.
 
 For example, [Colorcast](https://colorcast-app.com/){:target="_blank"}, [MetaImage](https://neededapps.com/metaimage/){:target="_blank"}, [Pixelmator Pro](https://www.pixelmator.com/pro/){:target="_blank"}.
  
