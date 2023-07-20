@@ -1,6 +1,6 @@
 ---
 title:  "Shortcut of NSMenuItem and NSButton"
-date:   2018-03-13 19:51:07 +0800
+date:   2023-07-20 10:08:50 +0800
 toc: true
 toc_label: "Table Of Content"
 toc_icon: "columns"  # corresponding Font Awesome icon name (without fa prefix)
