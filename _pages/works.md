@@ -15,4 +15,5 @@ Name | Icon | Description
 [DaysPast](http://dayspast.mystrikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/dayspast.png) | Days past notifier.
 [IconBook](http://iconbook.mystrikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/iconbook.png) | A stockbook for your Mac icons.
 [AIV](http://aiv.mystrikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/aiv.png) | Animated Image Viewer.
+[Pattern Wallpaper](https://apps.apple.com/cn/app/pattern-wallpaper-pro/id1618232946?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/patternwallpaper.png) | Generate wallpaper.
 
