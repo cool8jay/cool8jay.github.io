@@ -6,13 +6,13 @@ toc_label: "Table Of Content"
 toc_icon: "columns"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
-Shortcut key, or hot key, is called `Key Equivalent` in Mac development. To use it, just press corresponding key combination, it will trigger predefined application function.
+The shortcut key, or hotkey, is called `Key Equivalent` in Mac development. To use it, just press the corresponding key combination, and it will trigger a predefined application function.
 
-Among NSControl's subclass, NSMenuItem and NSButton supports key equivalent, which can be implemented in programmatic way or by changing xib object property. 
+Among NSControl's subclass, NSMenuItem and NSButton support key equivalent, which can be implemented in a programmatic way or by changing the xib object property. 
 
 ## 1. Composition of Key Equivalent 
 
-Normally, key equivalent is composite of two parts: some modifier keys and one basic key.
+Normally, the key equivalent is a composite of two parts: some modifier keys and one basic key.
 
 There are 4 possible modifier keys:
 
@@ -23,11 +23,11 @@ Symbol | Name |
 ⇧ | Shift
 ⌥ | Option, alias Alternate
 
-Normal key, includes alphabet, number, punctuation, symbol key, etc.
+The normal key, includes alphabet, number, punctuation, symbol key, etc.
 
-Key Equivalent may have no modifier key. This is very common in high-efficiency professional application, for example, in Photoshop, moving layer's shortcut key is `V`.
+Key Equivalent may have no modifier key. This is very common in high-efficiency professional applications, for example, in Photoshop, moving layer's shortcut key is `V`.
 
-For symbol key, it refers to key like `⎋` (escape), `↑` (up arrow). On Mac laptop, `⌦` (delete), `⇞` (page up), `⇟` (page down), `↖` (home), `↘` (end) does not have dedicated physical keys. But there are substitutes to accomplish same function:
+For symbol key, it refers to keys like `⎋` (escape), `↑` (up arrow). On Mac laptops, `⌦` (delete), `⇞` (page up), `⇟` (page down), `↖` (home), and `↘` (end) do not have dedicated physical keys. But there are substitutes to accomplish the same function:
 
 Key | Substitute 
 --- | ---
@@ -37,11 +37,11 @@ Page Down | Fn + ↓
 Home | Fn + ←
 End | Fn + →
 
-## 2. Changing xib object property
+## 2. Changing the xib object property
 
-In **Attributes** panel of NSMenuItem/NSButton, **Key Equivalent** input field, is used to set shortcut. For example, a character, E, will be displayed capitalized.
+In **Attributes** panel of NSMenuItem/NSButton, **Key Equivalent** input field is used to set the shortcut. For example, a character, E, will be displayed capitalized.
 
-If shortcut includes `⇧` key, the input field will show an Alternates button, to let you choose displaying style between, like  `⌘+` and `⇧⌘=`.
+If the shortcut includes `⇧` key, the input field will show an Alternates button, to let you choose displaying style between, like  `⌘+` and `⇧⌘=`.
 
 ![](https://user-images.githubusercontent.com/55504/37417474-5cafc540-27eb-11e8-830a-58ddb9c7defb.gif)
 
@@ -49,20 +49,20 @@ If shortcut includes `⇧` key, the input field will show an Alternates button, 
 
 ### 3.1 Normal Key
 
-Following code sets menuItem's shortcut as `E`.
+The following code sets menuItem's shortcut as `E`.
 
 {% highlight objective_c linenos %}
 [menuItem setKeyEquivalentModifierMask:!NSEventModifierFlagCommand];
 [menuItem setKeyEquivalent:@"e"];
 {% endhighlight %}
 
-Following code sets menuItem's shortcut as `⌘E`.
+The following code sets menuItem's shortcut as `⌘E`.
 
 {% highlight objective_c linenos %}
 [menuItem setKeyEquivalent:@"e"];
 {% endhighlight %}
 
-Following code sets menuItem's shortcut as `⇧⌘E`.
+The following code sets menuItem's shortcut as `⇧⌘E`.
 
 {% highlight objective_c linenos %}
 [menuItem setKeyEquivalent:@"E"];
@@ -70,7 +70,7 @@ Following code sets menuItem's shortcut as `⇧⌘E`.
 
 ### 3.2 Symbol Key
 
-First of all, you need to know corresponding Unicode value.
+First of all, you need to know the corresponding Unicode value.
 
 Symbol | Name | Unicode
 --- | --- | ---
@@ -89,17 +89,17 @@ Symbol | Name | Unicode
 ⇞ | Page Up | 0x21de 
 ⇟ | Page Down | 0x21df
 
-**Note:** `NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en){:target="_blank"}. Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
+**Note:** `NSBackspaceCharacter`, `NSTabCharacter`, and `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en){:target="_blank"}. Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
 {: .notice--info}
 
-Following code sets menuItem's shortcut as `⌘↩`.
+The following code sets menuItem's shortcut as `⌘↩`.
 
 {% highlight objective_c linenos %}
 NSString *s = [NSString stringWithFormat:@"%c", NSCarriageReturnCharacter];
 [menuItem setKeyEquivalent:s];
 {% endhighlight %}
 
-Following code sets menuItem's shortcut as `⌘↑`.
+The following code sets menuItem's shortcut as `⌘↑`.
 
 {% highlight objective_c linenos %}
 NSString *s = [NSString stringWithFormat:@"%C", 0x001e];
@@ -137,17 +137,17 @@ Option key has an alias, Alternate key, it is called so when holding it, the men
 
 In Apple's *Human Interface Guidelines*, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/){:target="_blank"}, and invisible by default.
 
-For instance, click MacOS desktop's left top `` menu item, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
+For instance, click the MacOS desktop's left top `` menu item, then hold the option key, and you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
 
 ![](https://user-images.githubusercontent.com/55504/37418708-cde64e8a-27ed-11e8-884a-022c6a51fe6d.gif)
 
 In xib, to implement this:
 
-1. Add 2 NSMenuItem, they **MUST** be adjacent, no other menu item between them.
-2. Set valid shortcut for them, and the second's shortcut **MUST** be the first's shortcut, plus `⌥` key.
+1. Add 2 NSMenuItem, they **MUST** be adjacent, with no other menu item between them.
+2. Set a valid shortcut for them, and the second's shortcut **MUST** be the first's shortcut, plus the`⌥` key.
 3. Check **Alternate** property for the second NSMenuItem.
 
-Now, run the app and it will works as above `` menu item example.
+Now, run the app and it will work as above `` menu item example.
 
 ![](https://user-images.githubusercontent.com/55504/37417755-03bbaffc-27ec-11e8-8cad-b9445ae05777.gif)
 
@@ -157,18 +157,19 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 
 ## 5. Some Design Guideline
 
-1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/){:target="_blank"}
+1. Do **NOT** add a shortcut for the contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/){:target="_blank"}
 2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⇧⌘Q` (log out account), `⌘C` (copy), etc.
-3. Only add shortcut for frequently used action, to relieve user's learning and remembering burden. For example, about, is a rarely-used  action, it does not need a shortcut.
+3. Only add shortcuts for frequently used actions, to relieve the user's learning and remembering burden. For example, about, is a rarely-used action, it does not need a shortcut.
+4. If the text on NSMenuItem and NSButton has the suffix "...", it usually means that the corresponding action is important and needs to be reconfirmed by the user. So an alert panel normally pops up and asks the user if he wants to do so.
 
 ## 6. Other Weird Facts
 
 1. `⌃⇧1` and `⇧1` can not exist together, or the former triggers the latter's action.
 2. `⌃⌥⇧1` and `⇧1` can not exist together, or the former triggers the latter's action.
 3. `⌃⌥⇧1` and `⌃⇧1` can not exist together, or the former triggers the latter's action.
-4. `⌃⇧A`, its log info shows incorrectly for **⌃A**, both in code and xib. What's more, In code, if `keyEquivalent` is a capitalized alphabet and `keyEquivalentModifierMask` does not include `NSEventModifierFlagShift`, system will add `⇧` automatically in the shortcut UI.
+4. `⌃⇧A`, its log info shows incorrectly for **⌃A**, both in code and xib. What's more, In code, if `keyEquivalent` is a capitalized alphabet and `keyEquivalentModifierMask` does not include `NSEventModifierFlagShift`, the system will add `⇧` automatically in the shortcut UI.
 5. In xib, set a menu item or button's Key Equivalent with `⇧`, `⌘`, `=`, and choose alternates as `⌘+`, then `⌘=` and `⇧⌘=` can both trigger its action.
-6. When setting `keyEquivalentModifierMask` for NSButton, it can not include `NSEventModifierFlagControl`, or shortcut will not work.
+6. When setting `keyEquivalentModifierMask` for NSButton, it can not include `NSEventModifierFlagControl`, or the shortcut will not work.
 
 ## 7. Reference
 
