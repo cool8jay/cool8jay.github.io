@@ -5,6 +5,8 @@ permalink: /works/
 
 Here are the Mac applications I develop in my spare time. The process of making the tiny ideas into running applications is enjoyable. I hope they may help you a little in some way.
 
+If you encounter any problems or have any thoughts while using, you may contact me through email on the about page in the apps.
+
 Name | Icon | Description | Platform
 --- | --- | --- | ---
 [Mokey](http://mokey.mystrikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/mokey.png) | Visualize Mac shortcuts. | Mac
