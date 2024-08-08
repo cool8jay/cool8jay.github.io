@@ -23,12 +23,7 @@ Name | Icon | Description | Platform
 
 Here are some books I've translated. Drawing on the shared experiences of others can better help us discover the answers to problems and the complex reasons behind them. Laid out in English and Chinese.
 
-English Title | Chinese Title | Cover 
+Cover  | English Title | Chinese Title
 --- | --- | ---
-[Andrew Rollings and Ernest Adams on Game Design](https://cool8jay.gitbook.io/andrew-rollings-and-ernest-adams-on-game-design){:target="_blank"} | 安德鲁·罗林斯和欧内斯特·亚当斯论游戏设计 | <img src="{{ site.url }}{{ site.baseurl }}/assets/images/works/andrew_rollings_and_ernest_adams_on_game_design.jpg" width="100" alt="">
-[A theory of fun for game design](https://cool8jay.gitbook.io/theory-of-fun-for-game-design){:target="_blank"} | 游戏设计的趣味理论 | <img src="{{ site.url }}{{ site.baseurl }}/assets/images/works/a_theory_of_fun_for_game_design.png" width="100" alt="">
-
-
-
-
-
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/works/andrew_rollings_and_ernest_adams_on_game_design.jpg" width="100" alt=""> |[Andrew Rollings and Ernest Adams on Game Design](https://cool8jay.gitbook.io/andrew-rollings-and-ernest-adams-on-game-design){:target="_blank"} | 安德鲁·罗林斯和欧内斯特·亚当斯论游戏设计
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/works/a_theory_of_fun_for_game_design.png" width="100" alt=""> | [A theory of fun for game design](https://cool8jay.gitbook.io/theory-of-fun-for-game-design){:target="_blank"} | 游戏设计的趣味理论
