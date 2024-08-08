@@ -21,7 +21,7 @@ Name | Icon | Description | Platform
 
 ## Books
 
-Here are some books I've translated. Drawing on the shared experiences of others can better help us discover the answers to problems and the complex reasons behind them. Laid out in English and Chinese.
+Here are some books I've translated. Drawing on the shared experiences of others can better help us discover the answers to problems and the complex reasons behind them. The books are laid out in English and Chinese.
 
 Cover  | English Title | Chinese Title
 --- | --- | ---
