@@ -5,7 +5,7 @@ permalink: /works/
 
 ## Apps
 
-Here are the Mac applications I develop in my spare time. The process of making the tiny ideas into running applications is enjoyable. I hope they may help you a little in some way.
+Here are the iOS/Mac applications I develop in my spare time. The process of making the tiny ideas into running applications is enjoyable. I hope they may help you a little in some way.
 
 Name | Icon | Description | Platform
 --- | --- | --- | ---
@@ -18,6 +18,7 @@ Name | Icon | Description | Platform
 [IconBook](https://apps.apple.com/cn/app/iconbook-lite/id1624253520?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/iconbook.png) | A stockbook for your Mac icons. | Mac
 [AIV](https://apps.apple.com/cn/app/aiv/id1551340425?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/aiv.png) | Animated Image Viewer. | Mac
 [Pattern Wallpaper](https://apps.apple.com/cn/app/pattern-wallpaper-pro/id1618232946?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/patternwallpaper.png) | Generate wallpaper. | iOS/Mac
+[Scappy](https://apps.apple.com/us/app/scappy/id6462760788?mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/scappy.png) | Convert image to text. | Mac
 
 ## Books
 
