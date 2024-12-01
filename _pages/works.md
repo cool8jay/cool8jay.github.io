@@ -13,11 +13,10 @@ Name | Icon | Description | Platform
 [AppCloner](https://github.com/cool8jay/public/blob/master/appcloner/AppCloner.zip){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/appcloner.png) | Run multiple instances of Mac app. | Mac
 [Captin](https://github.com/cool8jay/public/blob/master/captin/Captin.zip){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/captin.png) | Show Mac caps lock status. | Mac
 [Wordor](https://apps.apple.com/cn/app/wordor/id1192997654?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/wordor.png) | English word speller. | Mac
-[SoftBox](https://apps.apple.com/cn/app/softbox/id1224960646?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/softbox.png) | Use Mac as a soft box. | Mac
 [DaysPast](https://apps.apple.com/cn/app/dayspast/id1230762386?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/dayspast.png) | Days past notifier. | Mac
-[IconBook](https://apps.apple.com/cn/app/iconbook-lite/id1624253520?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/iconbook.png) | A stockbook for your Mac icons. | Mac
+IconBook | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/iconbook.png) | A stockbook for your Mac icons. <br>[Free Version](https://apps.apple.com/us/app/iconbook-lite/id1624253520?mt=12){:target="_blank"}<br>[Standard Version](https://apps.apple.com/us/app/iconbook/id1497748783?mt=12){:target="_blank"}| Mac
 [AIV](https://apps.apple.com/cn/app/aiv/id1551340425?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/aiv.png) | Animated Image Viewer. | Mac
-[Pattern Wallpaper](https://apps.apple.com/cn/app/pattern-wallpaper-pro/id1618232946?l=en-GB&mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/patternwallpaper.png) | Generate wallpaper. | iOS/Mac
+Pattern Wallpaper | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/patternwallpaper.png) | Generate wallpaper. <br>[Free Mac Version](https://apps.apple.com/us/app/pattern-wallpaper-lite/id1621524620?mt=12){:target="_blank"}<br>[Standard Mac Version](https://apps.apple.com/us/app/pattern-wallpaper-pro/id1618232946?mt=12){:target="_blank"}<br>[iOS Version](https://apps.apple.com/us/app/pattern-wallpaper-mobile/id1626853798){:target="_blank"} | iOS/Mac
 [Scappy](https://apps.apple.com/us/app/scappy/id6462760788?mt=12){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/scappy.png) | Convert image to text. | Mac
 
 ## Books
